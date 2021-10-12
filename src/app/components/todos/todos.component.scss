@@ -1,0 +1,84 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+}
+
+.todo{
+    padding: 15px;
+}
+
+.todo:nth-child(even) {
+ background-color: #EEE;
+}
+
+.todo:last-of-type {
+    border-bottom: 0px;
+}
+
+.todo .id {
+    flex: 1 1 50px;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.todo .content {
+    flex: 1 1 100%;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+    border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline:none;
+}
+
+.todo-input:invalid {
+    //border: 2px solid red;
+}
+
+.todo-input:valid {
+    //border: 2px solid #FE4880;
+  }
+
+.todo-submit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #FE4880;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.delete {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    
+}
